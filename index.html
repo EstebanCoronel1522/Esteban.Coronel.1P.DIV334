@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Supercars Olivos: una selección curada de autos nobles, deportivos y superdeportivos."
+    />
+    <meta
+      name="keywords"
+      content="Supercars Olivos, autos, deportivos, superdeportivos, catálogo, concesionaria"
+    />
+
+    <title>Supercars Olivos</title>
+    <link rel="icon" type="image/png" href="assets/icono.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#inicio" class="brand" aria-label="Supercars Olivos Inicio">
+          <img src="assets/icono.png" alt="Logo Supercars Olivos" />
+          <span>Supercars Olivos</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Navegación principal">
+          <a href="#catalogo">Catálogo</a>
+          <a href="#nobles">Nobles</a>
+          <a href="#premiums">Premiums</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a href="#contacto" class="btn btn-primary">Agenda una visita</a>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Exclusividad premium</p>
+            <h1>Elegancia, performance y emoción sobre ruedas.</h1>
+            <p class="lead">
+              Descubrí una flota pensada para quienes buscan innovación, estilo y
+              una experiencia de conducción inolvidable.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+              <a href="#contacto" class="btn btn-secondary">Consultanos</a>
+            </div>
+
+          </div>
+
+          <div class="hero-visual">
+            <img src="assets/hero.jpg" alt="Auto premium en exhibición" />
+          </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="section-title">
+            <p class="eyebrow">¿Por qué elegirnos?</p>
+            <h2>Calidad, confianza y atención personalizada.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-wrap">01</div>
+              <h3>Selección premium</h3>
+              <p>
+                Modelos exclusivos con atención a cada detalle para una experiencia de
+                compra premium.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">02</div>
+              <h3>Atención experta</h3>
+              <p>
+                Nuestro equipo te acompaña para ayudarte a elegir el vehículo que mejor
+                se adapte a tu estilo de vida.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">03</div>
+              <h3>Financiamiento</h3>
+              <p>
+                Soluciones flexibles para que puedas disfrutar del auto que siempre
+                soñaste sin complicaciones.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="catalogo" class="catalogue">
+        <div class="container">
+          <div class="section-title align-left">
+            <p class="eyebrow">Catálogo</p>
+            <h2>Explora nuestra flota.</h2>
+          </div>
+
+          <div class="catalog-filters" role="group" aria-label="Filtrar autos por categoría">
+            <button class="filter-btn active" type="button" data-category="todos" aria-pressed="true">
+              Todos
+            </button>
+            <button class="filter-btn" type="button" data-category="nobles" aria-pressed="false">
+              Nobles y deportivos
+            </button>
+            <button class="filter-btn" type="button" data-category="premiums" aria-pressed="false">
+              Premiums y superdeportivos
+            </button>
+          </div>
+
+          <div class="catalog-group" id="nobles">
+            <div class="group-header">
+              <h3>Nobles y deportivos</h3>
+              <span>Equilibrio entre estilo, comodidad y rendimiento.</span>
+            </div>
+
+            <div class="cars-grid">
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/audi-a3.png" alt="Audi A3" />
+                <div class="car-body">
+                  <h4>Audi A3</h4>
+                  <p>Sportback • 2.0 TFSI</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/chevrolet-cruze.png" alt="Chevrolet Cruze" />
+                <div class="car-body">
+                  <h4>Chevrolet Cruze</h4>
+                  <p>LTZ • 1.8 Turbo</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/fiat-kronnos.png" alt="Fiat Kronos" />
+                <div class="car-body">
+                  <h4>Fiat Kronos</h4>
+                  <p>Precision • 1.3</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/nissan-sentra.png" alt="Nissan Sentra" />
+                <div class="car-body">
+                  <h4>Nissan Sentra</h4>
+                  <p>SV • 2.0</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/toyota-corolla.png" alt="Toyota Corolla" />
+                <div class="car-body">
+                  <h4>Toyota Corolla</h4>
+                  <p>XEI • 1.8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="nobles">
+                <img src="assets/nobles-y-deportivos/volkswagen-golf.png" alt="Volkswagen Golf" />
+                <div class="car-body">
+                  <h4>Volkswagen Golf</h4>
+                  <p>Trendline • 1.4 TSI</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="catalog-group" id="premiums">
+            <div class="group-header">
+              <h3>Premiums y superdeportivos</h3>
+              <span>Potencia, diseño y tecnología de alto rendimiento.</span>
+            </div>
+
+            <div class="cars-grid">
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/aston-martin-db11.png" alt="Aston Martin DB11" />
+                <div class="car-body">
+                  <h4>Aston Martin DB11</h4>
+                  <p>Grand Tourer • V8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/audi-r8.png" alt="Audi R8" />
+                <div class="car-body">
+                  <h4>Audi R8</h4>
+                  <p>Performance • V10</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/chevrolet-corvette.png" alt="Chevrolet Corvette" />
+                <div class="car-body">
+                  <h4>Chevrolet Corvette</h4>
+                  <p>Stingray • V8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/ford-mustang.png" alt="Ford Mustang" />
+                <div class="car-body">
+                  <h4>Ford Mustang</h4>
+                  <p>GT • 5.0 V8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/mercedes-benz-amg.png" alt="Mercedes-Benz AMG" />
+                <div class="car-body">
+                  <h4>Mercedes-Benz AMG</h4>
+                  <p>C 63 S • 4.0 V8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+
+              <article class="car-card" data-category="premiums">
+                <img src="assets/premiums-y-superdeportivos/porsche-911.png" alt="Porsche 911" />
+                <div class="car-body">
+                  <h4>Porsche 911</h4>
+                  <p>Turbo S • 3.8</p>
+                  <button class="btn btn-primary reserve-btn" type="button">Reservar prueba</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container cta-inner">
+          <div>
+            <p class="eyebrow">Prueba de manejo</p>
+            <h2>Disfrutá la experiencia antes de decidir.</h2>
+          </div>
+          <button class="btn btn-primary" id="open-booking" type="button">Reservar turno</button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#inicio" class="brand footer-brand">
+            <img src="assets/icono.png" alt="Logo Supercars Olivos" />
+            <span>Supercars Olivos</span>
+          </a>
+        </div>
+
+        <div>
+          <h4>Contacto</h4>
+          <ul>
+            <li>Av. Del Libertador 3200</li>
+            <li>Olivos, Buenos Aires</li>
+            <li>+54 11 4777-2024</li>
+            <li>info@supercarsolivos.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Horarios</h4>
+          <ul>
+            <li>Lunes a Viernes</li>
+            <li>09:00 - 18:00</li>
+            <li>Sábado</li>
+            <li>09:00 - 14:00</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="reservation-dialog" aria-labelledby="reservation-title">
+      <div class="dialog-content">
+        <h2 id="reservation-title">Reservar una prueba de manejo</h2>
+        <form id="booking-form">
+          <label for="booking-car">Elegí el vehículo</label>
+          <select id="booking-car" name="car" required>
+            <option value="" selected disabled>Seleccioná un auto</option>
+            <option value="Audi A3" data-category="nobles">Audi A3</option>
+            <option value="Chevrolet Cruze" data-category="nobles">Chevrolet Cruze</option>
+            <option value="Fiat Kronos" data-category="nobles">Fiat Kronos</option>
+            <option value="Nissan Sentra" data-category="nobles">Nissan Sentra</option>
+            <option value="Toyota Corolla" data-category="nobles">Toyota Corolla</option>
+            <option value="Volkswagen Golf" data-category="nobles">Volkswagen Golf</option>
+            <option value="Aston Martin DB11" data-category="premiums">Aston Martin DB11</option>
+            <option value="Audi R8" data-category="premiums">Audi R8</option>
+            <option value="Chevrolet Corvette" data-category="premiums">Chevrolet Corvette</option>
+            <option value="Ford Mustang" data-category="premiums">Ford Mustang</option>
+            <option value="Mercedes-Benz AMG" data-category="premiums">Mercedes-Benz AMG</option>
+            <option value="Porsche 911" data-category="premiums">Porsche 911</option>
+          </select>
+          <div class="dialog-actions">
+            <button class="btn btn-secondary dialog-cancel" id="cancel-booking" type="button">Cancelar</button>
+            <button class="btn btn-primary" type="submit">Confirmar reserva</button>
+          </div>
+        </form>
+        <div id="reservation-confirmation" hidden>
+          <p id="reservation-message" role="status"></p>
+          <form method="dialog">
+            <button class="btn btn-primary" type="submit">Cerrar</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="index.js"></script>
+  </body>
+</html>
